@@ -3,24 +3,24 @@
     <p>选中对象{{item}};index:{{index}}</p>
     <p>
       <Dropdown class="demo-item" 
-        text="一号列表" 
+        text="简单下拉框" 
         :list="list1" 
         @select="select"
       ></Dropdown>
       <Dropdown class="demo-item" 
-        text="二号列表" 
+        text="过滤横线" 
         :list="list2"
         @select="selectFilter"
         :auto-blur="false"
       ></Dropdown>
       <Dropdown class="demo-item" 
-        text="三号列表" 
+        text="不可选中" 
         :list="list3" 
         @select="select"
         :disabled="true"
       ></Dropdown>
       <Dropdown class="demo-item" 
-        text="四号列表" 
+        text="使用header插槽" 
         :list="list3" 
         @select="select"
       >
