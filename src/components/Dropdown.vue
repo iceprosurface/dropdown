@@ -1,12 +1,10 @@
 <template>
   <div class="dropdown-wrap" :class="classes">
     <button class="dropdown-button dropdown-toggle primary" 
-      @click="focus"
-      >
+      @click="focus">
       {{text}}
       <span class="caret"></span>
     </button>
-    <!-- todo: 使用global-click替换mask以实现鼠标穿透响应其他操作 -->
     <div class="mask" @click="blur"></div>
     <div class="dropdown-menu">
       <div class="dropdown-header" v-if="$slots.default">
